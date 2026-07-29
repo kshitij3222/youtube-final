@@ -1,19 +1,32 @@
 const express = require("express");
-require("./Database/database");   // <-- Add this line
+require("./Database/database");
 const router = require("./Router/router");
 const app = express();
 const path = require("path");
-const port = 3000;
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
-// Serve static files from the "public" directory
+const port = process.env.PORT || 3000;
+
+// CORS
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://YOUR-VERCEL-APP.vercel.app",
+    ],
+    credentials: true,
+  })
+);
+
+app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
-// Middlewares
-app.use(router);
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "views"));
-app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(router);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
