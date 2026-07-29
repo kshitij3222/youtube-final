@@ -16,7 +16,7 @@ router.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://shubho-youtube-mern.netlify.app"
+      "https://youtube-final-chi.vercel.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
