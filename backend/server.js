@@ -13,7 +13,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://youtube-final-chi.vercel.app/"
+      "https://youtube-final-chi.vercel.app"
     
     ],
     credentials: true,
