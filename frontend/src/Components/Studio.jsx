@@ -30,8 +30,8 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LanguageIcon from "@mui/icons-material/Language";
 
 function Studio() {
-  const backendURL = "http://localhost:3000"
-  // const backendURL = "http://localhost:3000";
+  const backendURL = "https://youtube-final-tpv8.onrender.com"
+  // const backendURL = "https://youtube-final-tpv8.onrender.com";
   const [isChannel, setisChannel] = useState();
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedThumbnail, setSelectedThumbnail] = useState(null);

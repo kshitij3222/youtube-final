@@ -20,8 +20,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { GrUndo } from "react-icons/gr";
 
 function VideoDetails() {
-  const backendURL = "http://localhost:3000"
-  // const backendURL = "http://localhost:3000";
+  const backendURL = "https://youtube-final-tpv8.onrender.com"
+  // const backendURL = "https://youtube-final-tpv8.onrender.com";
   const { id } = useParams();
   const [videodata, setVideoData] = useState();
   const [previewTitle, setPreviewTitle] = useState("");

@@ -21,8 +21,8 @@ import { RxCross1 } from "react-icons/rx";
 import { AiOutlineVideoCameraAdd } from "react-icons/ai";
 import { useSelector } from "react-redux";
 function Navbar() {
-  const backendURL = "http://localhost:3000"
-  // const backendURL = "http://localhost:3000";
+  const backendURL = "https://youtube-final-tpv8.onrender.com"
+  // const backendURL = "https://youtube-final-tpv8.onrender.com";
   const { data } = useParams();
   const [data2, setData] = useState(data);
   const [isbtnClicked, setisbtnClicked] = useState(false);

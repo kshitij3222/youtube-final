@@ -16,8 +16,8 @@ import "react-loading-skeleton/dist/skeleton.css";
 import { useSelector } from "react-redux";
 
 function Comments() {
-  const backendURL = "http://localhost:3000"
-  // const backendURL = "http://localhost:3000";
+  const backendURL = "https://youtube-final-tpv8.onrender.com"
+  // const backendURL = "https://youtube-final-tpv8.onrender.com";
   const [AllComments, setAllComments] = useState([]);
   const [Profile, setProfile] = useState();
   const [filterComment, setFilterComment] = useState("");

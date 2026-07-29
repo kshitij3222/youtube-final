@@ -11,8 +11,8 @@ import "react-loading-skeleton/dist/skeleton.css";
 import { useSelector } from "react-redux";
 
 function ChannelHome(prop) {
-  const backendURL = "http://localhost:3000"
-  // const backendURL = "http://localhost:3000"
+  const backendURL = "https://youtube-final-tpv8.onrender.com"
+  // const backendURL = "https://youtube-final-tpv8.onrender.com"
   const [myVideos, setMyVideos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showHome, setShowHome] = useState(false);

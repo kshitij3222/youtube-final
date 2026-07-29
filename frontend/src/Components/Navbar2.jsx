@@ -18,8 +18,8 @@ import { BiSearch } from "react-icons/bi";
 import { useSelector } from "react-redux";
 
 function Navbar2() {
-  const backendURL = "http://localhost:3000";
-  // const backendURL = "http://localhost:3000";
+  const backendURL = "https://youtube-final-tpv8.onrender.com";
+  // const backendURL = "https://youtube-final-tpv8.onrender.com";
   const [profilePic, setProfilePic] = useState();
   const [userVideos, setUserVideos] = useState([]);
   const [showPop, setShowPop] = useState(false);

@@ -18,8 +18,8 @@ import "react-loading-skeleton/dist/skeleton.css";
 import { useSelector } from "react-redux";
 
 function VideoComments() {
-  const backendURL = "http://localhost:3000"
-  // const backendURL = "http://localhost:3000";
+  const backendURL = "https://youtube-final-tpv8.onrender.com"
+  // const backendURL = "https://youtube-final-tpv8.onrender.com";
   const { id } = useParams();
   const [videoComments, setVideoComments] = useState([]);
   const [Profile, setProfile] = useState();

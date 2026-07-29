@@ -20,8 +20,8 @@ function generateRandomColors(count) {
 }
 
 function ChannelPlaylists(prop) {
-  const backendURL = "http://localhost:3000"
-  // const backendURL = "http://localhost:3000"
+  const backendURL = "https://youtube-final-tpv8.onrender.com"
+  // const backendURL = "https://youtube-final-tpv8.onrender.com"
   const [PlaylistData, setPlaylistData] = useState([]);
   const [playlistColors, setPlaylistColors] = useState([]);
   const [loading, setLoading] = useState(true);

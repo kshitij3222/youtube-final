@@ -11,7 +11,7 @@ const initialState = {
 export const fetchUserData = createAsyncThunk(
   "user/fetchUserData",
   async () => {
-    const response = await fetch("http://localhost:3000/userdata", {
+    const response = await fetch("https://youtube-final-tpv8.onrender.com/userdata", {
       credentials: "include",
     });
     const data = await response.json();

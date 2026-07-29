@@ -36,8 +36,8 @@ import Error from "./Error";
 import { useSelector } from "react-redux";
 
 function VideoSection() {
-  const backendURL = "http://localhost:3000";
-  // const backendURL = "http://localhost:3000";
+  const backendURL = "https://youtube-final-tpv8.onrender.com";
+  // const backendURL = "https://youtube-final-tpv8.onrender.com";
   const { id } = useParams();
   const [videoData, setVideoData] = useState(null);
   const [channelName, setChannelName] = useState();

@@ -5,8 +5,8 @@ import "react-loading-skeleton/dist/skeleton.css";
 import { useSelector } from "react-redux";
 
 function ChannelVideos(prop) {
-  const backendURL = "http://localhost:3000"
-  // const backendURL = "http://localhost:3000"
+  const backendURL = "https://youtube-final-tpv8.onrender.com"
+  // const backendURL = "https://youtube-final-tpv8.onrender.com"
   const [myVideos, setMyVideos] = useState([]);
   const [videosort, setVideoSort] = useState();
   const [loading, setLoading] = useState(true);

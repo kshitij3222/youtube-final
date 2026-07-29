@@ -12,8 +12,8 @@ import "react-loading-skeleton/dist/skeleton.css";
 import { useSelector } from "react-redux";
 
 function Trending() {
-  const backendURL = "http://localhost:3000";
-  // const backendURL = "http://localhost:3000";
+  const backendURL = "https://youtube-final-tpv8.onrender.com";
+  // const backendURL = "https://youtube-final-tpv8.onrender.com";
   const [trendingVideos, setTrendingVideos] = useState([]);
   const [menuClicked, setMenuClicked] = useState(() => {
     const menu = localStorage.getItem("menuClicked");
@@ -50,7 +50,7 @@ function Trending() {
     const getTrending = async () => {
       try {
         const response = await fetch(
-          "http://localhost:3000/gettrending"
+          "https://youtube-final-tpv8.onrender.com/gettrending"
         );
         const trending = await response.json();
         if (trending !== "NO DATA") {
