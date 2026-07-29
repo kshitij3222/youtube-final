@@ -197,41 +197,7 @@ auth.post("/googlelogin", async (req, res) => {
 
       await user.save();
     }
-    const googleLogin = async () => {
-      try {
-        console.log("Google button clicked");
 
-        const result = await signInWithPopup(auth, provider);
-
-        console.log("Firebase login successful");
-        console.log(result.user);
-
-        const googleUser = {
-          name: result.user.displayName,
-          email: result.user.email,
-          photo: result.user.photoURL,
-        };
-
-        console.log("Sending to backend:", googleUser);
-
-        const response = await fetch(`${backendURL}/googlelogin`, {
-          method: "POST",
-          credentials: "include",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(googleUser),
-        });
-
-        console.log("Backend response received");
-
-        const data = await response.json();
-        console.log(data);
-
-      } catch (error) {
-        console.error(error);
-      }
-    };
     const accessToken = generateAccessToken(user);
     const refreshToken = generateRefreshToken(user);
 
@@ -241,16 +207,16 @@ auth.post("/googlelogin", async (req, res) => {
     res
       .cookie("refreshToken", refreshToken, {
         httpOnly: false,
-        sameSite: "lax",
-        secure: false,
+        sameSite: "None",
+        secure: true,
         maxAge: 24 * 60 * 60 * 1000,
       })
       .cookie("accessToken", accessToken, {
         httpOnly: false,
-        sameSite: "lax",
-        secure: false,
+        sameSite: "None",
+        secure: true,
         maxAge: 24 * 60 * 60 * 1000,
-      });
+      })
 
     return res.status(200).json({
       success: true,
