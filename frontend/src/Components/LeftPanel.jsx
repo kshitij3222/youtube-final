@@ -1353,11 +1353,11 @@ function LeftPanel() {
                   style={{ color: theme ? "white" : "black" }}
                 />
                 <a
-                  href="https://github.com/kshitij3222/youtube-final "
+                  href=""
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Kshitij Mahajan 🚀
+                  
                 </a>
               </div>
             </Tooltip>
